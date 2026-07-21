@@ -10,6 +10,9 @@ int main(){
         cout<<(m/2)*n;
     }
     else{
-        cout<<((((max(n,m))-1)/2)*min(n,m)) + (min(n,m)/2);
+        int mx = max(n, m);
+        int mn = min(n, m);
+
+        cout << ((mx - 1) >> 1) * mn + (mn >> 1);;
     }
 }
