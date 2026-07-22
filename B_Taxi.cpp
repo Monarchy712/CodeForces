@@ -18,18 +18,19 @@ int main(){
     taxis += three;
     one -= pair31;
 
-    while(two>0){
-        if(two==1) break;
-        two-=2;
-        taxis++;
-    }
+    
+    
+    
+    taxis += two/2;
+    two %=2;
     
     if(two>0) {
         taxis++;
-        one-=2;
+        one = max(0,one-2);
     }
-    if(one>0 && one%4==0) taxis+= one/4;
-    else if(one>0) taxis+= (1+one/4);
+
+    
+    taxis += (one+3)/4;
 
     cout<<taxis;
       
